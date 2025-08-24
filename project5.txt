@@ -1,0 +1,24 @@
+def adventure_game():
+    print("Welcome to the Text Adventure Game!")
+    print("You wake up in a dark forest. Do you want to go LEFT or RIGHT?")
+
+    choice1 = input("Enter choice: ").lower()
+    if choice1 == "left":
+        print("You see a river. Do you SWIM or BUILD a raft?")
+        choice2 = input("Enter choice: ").lower()
+        if choice2 == "swim":
+            print("Oh no! You were eaten by a crocodile. Game Over.")
+        else:
+            print("You built a raft and escaped safely. You Win!")
+    elif choice1 == "right":
+        print("You find a cave. Do you ENTER or IGNORE it?")
+        choice2 = input("Enter choice: ").lower()
+        if choice2 == "enter":
+            print("You found treasure inside the cave! You Win!")
+        else:
+            print("You got lost in the forest. Game Over.")
+    else:
+        print("Invalid choice! Game Over.")
+
+# Run game
+adventure_game()
